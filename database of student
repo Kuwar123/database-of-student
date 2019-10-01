@@ -1,0 +1,26 @@
+class person:
+    name=''
+    age=''
+class student(person):
+    sub1_marks=''
+    sub2_marks=''
+    total_marks=sub1_marks+sub2_marks
+    average=''
+    def read(self):
+        print('enter the following values')
+        self.name=input('enter name:')
+        self.age=input('enter the age:')
+        self.sub1_marks=int(input('enter the sub1 marks:'))
+        self.sub2_marks=int(input('enter the sub2 marks:'))
+        self.total_marks=self.sub1_marks+self.sub2_marks
+        self.average=(self.sub1_marks+self.sub2_marks)/2
+    def display(self):
+        print('entered values are')
+        print('name',self.name)
+        print('age',self.age)
+        print('marks',self.sub1_marks,self.sub2_marks)
+        print('total',self.total_marks)
+        print('average',self.average)
+c1=student()
+c1.read()
+c1.display()
